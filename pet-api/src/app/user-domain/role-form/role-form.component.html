@@ -1,0 +1,19 @@
+<div>
+  <form >
+    <div>角色:</div>
+    <div>
+      <select name="" id="">
+        <option>請選擇</option>
+        <option *ngFor="let role of roleOptions" value="role.value">
+            {{role.name}}
+        </option>
+        </select>
+   </div>
+   <div>
+      <label *ngFor="let role of roleOptions">
+          <input type="checkbox"   value="role.value" id="">
+          {{role.name}}
+      </label>
+   </div>
+  </form>
+ </div>

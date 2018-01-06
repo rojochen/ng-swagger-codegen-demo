@@ -1,0 +1,23 @@
+<form [formGroup]="userForm" (ngSubmit)="onSubmit(userForm)" >
+  <div>
+    <span>name:</span>
+    <input type="text" formControlName="name" placeholder="請輸入姓名" name="name"  >
+  </div>
+  <div>
+    <span>email:</span>
+    <input type="text" formControlName="email"  placeholder="請輸入email" name="email" >
+  </div>
+  <div>
+    <span>姓別:</span>
+    <input type="radio" formControlName="gender" name="genderRadio" id="gender1" value="female">
+    <label for="gender1">小姐</label>
+    <input type="radio" formControlName="gender"  name="genderRadio"  id="gender2" value="male">
+    <label for="gender2">先生</label>
+  </div>
+  <div>
+    <span>聯絡方式:</span>
+  </div>
+  <div>
+    <button type="submit">新增</button>
+  </div>
+</form>
